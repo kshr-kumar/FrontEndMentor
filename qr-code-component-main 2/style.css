@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    --BLUE: hsl(220, 15%, 55%);
+    --DBLUE: hsl(218, 44%, 22%);
+    --LGREY: hsl(212, 45%, 89%);
+    --FF: 'Outfit', sans-serif;
+
+}
+
+body {
+    background-color: rgb(217, 229, 233)
+}
+
+
+.flex-container {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.bfont {
+    font-size: 22px;
+    font-family: var(--FF);
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+.sfont {
+    font-size: 18px;
+    font-family: var(--FF);
+    text-align: center;
+    margin: 20px;
+}
+
+.card {
+    background-color: snow;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px grey;
+}
+.qr-img {
+    margin: 10px;
+    border-radius: 15px;
+    background-image: url('./images/image-qr-code.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .card {
+        width: 400px;
+        height: 600px;
+    }
+    .qr-img {
+        width: auto;
+        height: 400px;
+    
+    }
+  }
+
+  /* @media screen and (max-width: 768px) {
+    .card {
+        width: 476px;
+        height: 600px;
+    }
+    .qr-img {
+        width: auto;
+        height: 400px;
+    
+    }
+
+} */
+
+
+@media screen and (max-width: 375px) {
+    .card {
+        width: 355px;
+        height: 470px;
+    }
+    .qr-img {
+        width: auto;
+        height: 300px;
+    
+    }
+
+  }
+
+
