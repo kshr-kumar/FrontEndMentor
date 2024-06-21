@@ -1,0 +1,142 @@
+:root{
+--CVerypaleblue: hsl(225, 100%, 98%);
+--CDesaturatedblue: hsl(224, 23%, 55%);
+--CDarkblue: hsl(223, 47%, 23%);
+--CPaleblue: hsl(225, 100%, 94%);
+--CBrightblue: hsl(245, 75%, 52%);
+--Cfont-family: "Red Hat Display", sans-serif;
+}
+
+/* Box sizing rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--CPaleblue);
+}
+
+.flex-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ChildContainer{
+    width: 450px;
+    height: 600px;
+    border-radius: 24px;
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.imgCont > img{
+    border-radius: 24px 24px 0px 0px; 
+}
+
+.ordsum
+{
+    font-family: var(--Cfont-family);
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 20px;
+}
+.descri1
+{
+    font-family: var(--Cfont-family);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 15px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.anulpl
+{
+    width: 80%;
+    height: 70px;
+    background-color: var(--CVerypaleblue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    border-radius: 16px;
+
+}
+.anulpl > img{
+    margin-left: 20px;
+}
+.anp{
+    font-family: var(--Cfont-family);
+    margin-right: 50px;
+    font-weight: 700;
+}
+.price{
+    font-family: var(--Cfont-family);
+    margin-right: 50px;
+    font-weight: 500;
+}
+.change{
+    font-family: var(--Cfont-family);
+    font-weight: 700;
+    float: right;
+    margin-right: 20px;
+    
+}
+.procedpay
+{
+    cursor: pointer;
+    width: 80%;
+    padding: 10px;
+    font-family: var(--Cfont-family);
+    font-weight: 700;
+    background-color: var(--CBrightblue);
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.procedpay:hover {
+   opacity: 0.7;
+
+}
+.change > a:hover
+{
+    text-decoration: none;
+}
+
+.cancelorder{
+    font-family: var(--Cfont-family);
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 425px) {
+    .ChildContainer{
+        width: 300px;
+        height: 500px;
+
+    }
+
+    .imgCont > img{
+        width: 300px;
+    
+
+    }
+    .anp, .price, .change{
+        margin-right: 10px;
+    }
+    .procedpay, .anulpl, .descri1{
+        width: 90%;
+    }
+    .anulpl > img{
+        margin-left: 10px;
+    }
+    
+}
