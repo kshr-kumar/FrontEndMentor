@@ -1,0 +1,127 @@
+:root{
+--CDarkcyan: hsl(158, 36%, 37%);
+--CCream: hsl(30, 38%, 92%);
+--CVerydarkblue: hsl(212, 21%, 14%);
+--CDarkgrayishblue: hsl(228, 12%, 48%);
+--CWhite: hsl(0, 0%, 100%);
+--Cfont-family: "Montserrat", sans-serif;
+--Sfont-family: "Fraunces", serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    height: 100vh;
+    background-color: var(--CCream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.img-container{
+    width: 350px;
+    height: 450px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px 0 0 15px;
+}
+
+.content-container {
+    width: 350px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: var(--CWhite);
+    border-radius: 0 15px 15px 0;
+}
+
+.perfume, .descrip, .sec-par, .price, .cart-but {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.perfume {
+    font-family: var(--Cfont-family);
+    font-size: 0.8rem;
+    letter-spacing: 7px;
+    font-weight: 500;
+    color: var(--CDarkgrayishblue);
+     margin-top: 30px; 
+}
+.descrip {
+    width: 65%;
+    font-family: var(--Sfont-family);
+    /* margin-top: 20px; */
+}
+.sec-par
+{
+    font-family: var(--Cfont-family);
+    width: 80% ;
+    justify-content: left;
+}
+.cart-but{
+    padding:15px 90px 15px 90px;
+    font-family: var(--Cfont-family);
+    font-weight: 500;
+    color: var(--CWhite);
+    background-color: var(--CDarkcyan);
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border: 0;
+
+}
+
+.main-price
+{
+    font-family: var(--Sfont-family);
+    color: var(--CDarkcyan);
+    font-weight: 700;
+    font-size: 2rem;
+    float: left;
+}
+.strike-price{
+   font-size: 1rem;
+   float: left;
+   margin-left: 20px;
+   font-family: var(--Cfont-family);
+}
+
+@media screen and (max-width: 425px){
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .img-container{
+        width: 300px;
+        height: 250px;
+        border-radius: 15px 15px 0 0;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .content-container {
+        width: 300px;
+        height: 400px;
+        border-radius: 0 0 15px 15px;
+    }
+    .descrip {
+        width: 100%;
+        font-family: var(--Sfont-family);
+    }
+    .perfume, .descrip, .sec-par, .price, .cart-but {
+        margin-left: 10px;
+
+    }
+
+}
